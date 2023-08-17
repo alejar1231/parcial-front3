@@ -11,7 +11,7 @@ const Formulario = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        if (cancion.trim().length > 3 && banda.trim().length > 2) {
+        if (banda.trim().length >= 3 && cancion.trim().length >= 6) {
             setEnviado(true);
             setError(false);
         } else {
